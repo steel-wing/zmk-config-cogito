@@ -68,9 +68,9 @@ label= "CON"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp LALT    &kp HOME    &kp UP      &kp END     &LBKT           &kp RBKT    &kp C_BRI_DN &kp C_BRI_UP &kp PSCRN &kp RALT
-                &kp LSHFT   &kp LEFT    &kp DOWN    &kp RIGHT   &LPAR           &kp RPAR    &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp RSHIFT
-                &kp LCTRL   &kp PG_UP   &kp CAPS    &kp PG_DN   &LBRC           &kp RBRC    &kp C_PREV  &kp C_NEXT  &kp C_PP    &kp RCTRL    
+                &kp LALT    &kp HOME    &kp UP      &kp END     &kp LBKT        &kp RBKT    &kp C_BRI_DN &kp C_BRI_UP &kp PSCRN &kp RALT
+                &kp LSHFT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp LPAR        &kp RPAR    &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp RSHIFT
+                &kp LCTRL   &kp PG_UP   &kp CAPS    &kp PG_DN   &kp LBRC        &kp RBRC    &kp C_PREV  &kp C_NEXT  &kp C_PP    &kp RCTRL    
                                         &kp BSPC    &kp TAB     &none           &mo ADJ     &kp SPC     &kp TAB
                         >;
                 };
@@ -97,7 +97,7 @@ label= "SYM"                               ;
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR
                 &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0  
                 &kp GRAVE   &kp TILDE   &kp LS(MINUS) &kp MINUS &kp SQT         &kp DQT     &kp EQUAL   &kp PLUS    &kp PIPE    &kp BSLH     
-                                        &kp LCTRL   &kp LWIN    &mo ADJ         &none       &none       &none       
+                                        &kp LCTRL   &kp LGUI    &mo ADJ         &none       &none       &none       
                         >;
                 };
 
