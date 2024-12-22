@@ -13,10 +13,10 @@
 // timeout for the combos. see below
 #define TIMEOUT 50
 
-// if held for longer than 100ms, do first option
-// if tapped in under 100ms, do second option. if double-tapped in under 150ms, hold down second option
+// if held for longer than 200ms, do first option
+// if tapped in under 200ms, do second option. if double-tapped in under 150ms, hold down second option
 &mt {
-  quick-tap-ms = <100>;
+  quick-tap-ms = <200>;
   global-quick-tap;
   flavor = "tap-preferred";
   tapping-term-ms = <150>;
@@ -72,7 +72,7 @@ label= "CON"                               ;
                 &kp LALT    &kp HOME    &kp UP      &kp END     &kp LBKT        &kp RBKT    &kp C_BRI_DN &kp C_BRI_UP &kp PSCRN &kp RALT
                 &kp LSHFT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp LPAR        &kp RPAR    &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp RSHIFT
                 &kp LCTRL   &kp PG_UP   &kp CAPS    &kp PG_DN   &kp LBRC        &kp RBRC    &kp C_PREV  &kp C_NEXT  &kp C_PP    &kp RCTRL    
-                                        &kp BSPC    &kp TAB     &none           &mo ADJ     &kp SPC     &kp TAB
+                                        &none       &none       &none           &mo ADJ     &kp SPC     &kp TAB
                         >;
                 };
 
@@ -183,7 +183,7 @@ label= "GN"                                ;
         };
 
 
-//                   Here's how they're accessed for combos
+//                   here's how they're accessed for combos
 //
 //         0   1   2   3   4                      5   6   7   8   9
 //        10  11  12  13  14                      15  16  17  18  19
