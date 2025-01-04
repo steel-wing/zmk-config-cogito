@@ -69,7 +69,7 @@ label= "CON"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp LALT    &kp HOME    &kp UP      &kp END     &kp LBKT        &kp RBKT    &kp C_BRI_DN &kp C_BRI_UP &kp PSCRN &kp RALT
+                &kp LALT    &kp HOME    &kp UP      &kp END     &kp LBKT        &kp RBKT    &kp C_BRI_DN &kp C_BRI_UP &kp PRINTSCREEN &kp RALT
                 &kp LSHFT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp LPAR        &kp RPAR    &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp RSHIFT
                 &kp LCTRL   &kp PG_UP   &kp CAPS    &kp PG_DN   &kp LBRC        &kp RBRC    &kp C_PREV  &kp C_NEXT  &kp C_PP    &kp RCTRL    
                                         &none       &none       &none           &mo ADJ     &kp SPC     &kp TAB
@@ -140,17 +140,17 @@ label= "GAME"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃   SHIFT   ┃     A     ┃     S     ┃     D     ┃     F     ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃    CTRL   ┃     V     ┃     B     ┃     G     ┃     T     ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//             ┃    CTRL   ┃     Z     ┃     X     ┃     C     ┃     V     ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //             ┗━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    ESC    ┃   SPACE   ┃ ENTER/GN  ┃   ┃           ┃           ┃           ┃
+//                                     ┃  ESC/BASE ┃   SPACE   ┃ ENTER/GN  ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp TAB     &kp Q       &kp W       &kp E       &kp R           &none       &none       &none      &none        &none
                 &kp LSHIFT  &kp A       &kp S       &kp D       &kp F           &none       &none       &none      &none        &none  
-                &kp LCTRL   &kp V       &kp B       &kp G       &kp T           &none       &none       &none      &none        &none        
-                                        &kp ESC     &kp SPACE   &lt GN RET      &none       &none       &none     
+                &kp LCTRL   &kp Z       &kp X       &kp C       &kp V           &none       &none       &none      &none        &none        
+                                        &lt base ESC &kp SPACE   &lt GN RET      &none       &none       &none     
                         >;
                 };
 
@@ -183,7 +183,7 @@ label= "GN"                                ;
         };
 
 
-//                   here's how they're accessed for combos
+//                   here's how they're addressed for combos
 //
 //         0   1   2   3   4                      5   6   7   8   9
 //        10  11  12  13  14                      15  16  17  18  19
@@ -197,6 +197,14 @@ combos {
                 key-positions = <0 1>;
                 bindings = <&kp ESC>;
             };
+
+        combo_win {
+                timeout-ms = <TIMEOUT>;
+                key-positions = <30 31>;
+                bindings = <&kp LGUI>;
+            };
+
+
         combo_game {
                 timeout-ms = <TIMEOUT>;
                 key-positions = <30 31 32>;
