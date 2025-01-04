@@ -150,7 +150,7 @@ label= "GAME"                              ;
                 &kp TAB     &kp Q       &kp W       &kp E       &kp R           &none       &none       &none      &none        &none
                 &kp LSHIFT  &kp A       &kp S       &kp D       &kp F           &none       &none       &none      &none        &none  
                 &kp LCTRL   &kp Z       &kp X       &kp C       &kp V           &none       &none       &none      &none        &none        
-                                        &lt base ESC &kp SPACE   &lt GN RET      &none       &none       &none     
+                                        &lt BASE ESC &kp SPACE   &lt GN RET      &none       &none       &none     
                         >;
                 };
 
